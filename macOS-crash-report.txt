@@ -1,0 +1,390 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               bun [28564]
+Path:                  /opt/homebrew/*/bun
+Identifier:            bun
+Version:               ???
+Code Type:             ARM-64 (Native)
+Parent Process:        zsh [56411]
+Responsible:           stable [55994]
+User ID:               501
+
+Date/Time:             2024-01-31 07:38:16.6162 -0600
+OS Version:            macOS 14.2.1 (23C71)
+Report Version:        12
+Anonymous UUID:        8B1EB1E5-D4F3-8952-AE4E-D604E6F88653
+
+Sleep/Wake UUID:       0BFF3872-5BFF-467F-9DDE-95A081181082
+
+Time Awake Since Boot: 140000 seconds
+Time Since Wake:       5778 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_CRASH (SIGKILL)
+Exception Codes:       0x0000000000000000, 0x0000000000000000
+
+Termination Reason:    Namespace DYLD, Code 9 
+missing symbol called
+
+Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
+0   dyld                          	       0x18968ad80 __terminate_with_payload + 8
+1   dyld                          	       0x189696b30 abort_with_payload_wrapper_internal + 136
+2   dyld                          	       0x189696b44 abort_with_payload + 16
+3   dyld                          	       0x18961d584 dyld4::halt(char const*, dyld4::StructuredError const*) + 304
+4   dyld                          	       0x189655ba0 dyld4::APIs::_dyld_missing_symbol_abort() + 28
+5   node.napi.glibc.node          	       0x1044e6ea8 0x1044d8000 + 61096
+6   node.napi.glibc.node          	       0x1044e4a98 0x1044d8000 + 51864
+7   node.napi.glibc.node          	       0x1044e5ed4 napi_register_module_v1 + 48
+8   bun                           	       0x101a47c04 0x100dac000 + 13220868
+9   ???                           	       0x13800c03c ???
+10  bun                           	       0x1030bcef8 0x100dac000 + 36769528
+11  ???                           	       0x13801c15c ???
+12  bun                           	       0x1030bcef8 0x100dac000 + 36769528
+13  bun                           	       0x1030bcef8 0x100dac000 + 36769528
+14  bun                           	       0x103097db4 0x100dac000 + 36617652
+15  bun                           	       0x102655530 0x100dac000 + 25859376
+16  bun                           	       0x101a5f1f0 0x100dac000 + 13316592
+17  bun                           	       0x101a617e4 0x100dac000 + 13326308
+18  ???                           	       0x13800c03c ???
+19  bun                           	       0x1030bcef8 0x100dac000 + 36769528
+20  ???                           	       0x13801c15c ???
+21  bun                           	       0x1030bcef8 0x100dac000 + 36769528
+22  bun                           	       0x103097db4 0x100dac000 + 36617652
+23  bun                           	       0x102655530 0x100dac000 + 25859376
+24  bun                           	       0x101a5f1f0 0x100dac000 + 13316592
+25  bun                           	       0x101a65654 0x100dac000 + 13342292
+26  bun                           	       0x102a3cbac 0x100dac000 + 29952940
+27  ???                           	       0x13800c03c ???
+28  bun                           	       0x1030bce84 0x100dac000 + 36769412
+29  bun                           	       0x1030bce84 0x100dac000 + 36769412
+30  bun                           	       0x1030bce84 0x100dac000 + 36769412
+31  bun                           	       0x1030be1e0 0x100dac000 + 36774368
+32  bun                           	       0x103097db4 0x100dac000 + 36617652
+33  bun                           	       0x102655530 0x100dac000 + 25859376
+34  bun                           	       0x102a3b2a8 0x100dac000 + 29946536
+35  bun                           	       0x102c0454c 0x100dac000 + 31819084
+36  bun                           	       0x101370300 0x100dac000 + 6046464
+37  bun                           	       0x100f9a9d4 0x100dac000 + 2025940
+38  bun                           	       0x100db1350 0x100dac000 + 21328
+
+Thread 1:: JavaScriptCore libpas scavenger
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x102ff0d20 0x100dac000 + 35933472
+3   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+4   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 2:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 3:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 4:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 5:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 6:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 7:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 8:: Heap Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 9:: Bun Pool 0
+0   libsystem_kernel.dylib        	       0x18995b62c __ulock_wait + 8
+1   bun                           	       0x101149c38 0x100dac000 + 3791928
+2   bun                           	       0x1015268b8 0x100dac000 + 7841976
+3   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 10:: Bun Pool 1
+0   libsystem_kernel.dylib        	       0x18995b62c __ulock_wait + 8
+1   bun                           	       0x101149c38 0x100dac000 + 3791928
+2   bun                           	       0x1015268b8 0x100dac000 + 7841976
+3   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+Thread 11:: JIT Worklist Helper Thread
+0   libsystem_kernel.dylib        	       0x18995d06c __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x18999a5fc _pthread_cond_wait + 1228
+2   bun                           	       0x101d1bdf0 0x100dac000 + 16186864
+3   bun                           	       0x101d09d04 0x100dac000 + 16112900
+4   bun                           	       0x101d5b79c 0x100dac000 + 16447388
+5   libsystem_pthread.dylib       	       0x18999a034 _pthread_start + 136
+6   libsystem_pthread.dylib       	       0x189994e3c thread_start + 8
+
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000000   x1: 0x0000000000000000   x2: 0x0000000000000009   x3: 0x000000016efe4360
+    x4: 0x0000000000000014   x5: 0x000000016efe3f60   x6: 0x0000000000000200   x7: 0x0000000000000000
+    x8: 0x0000000000000020   x9: 0x00000001e0178f80  x10: 0x000000000000000a  x11: 0x0000000000000000
+   x12: 0x0000000000000032  x13: 0x00000000000007fb  x14: 0x000000008003fffb  x15: 0x0000000000000000
+   x16: 0x0000000000000208  x17: 0x000000018961637c  x18: 0x0000000000000000  x19: 0x0000000000000000
+   x20: 0x000000016efe3f60  x21: 0x0000000000000014  x22: 0x000000016efe4360  x23: 0x0000000000000009
+   x24: 0x0000000000000006  x25: 0x000000008d1f9040  x26: 0xfffe000000000002  x27: 0x000000010e4c4088
+   x28: 0x000000010e445c80   fp: 0x000000016efe3f30   lr: 0x0000000189696b30
+    sp: 0x000000016efe3ef0   pc: 0x000000018968ad80 cpsr: 0x00001000
+   far: 0x0000000000000000  esr: 0x56000080  Address size fault
+
+Binary Images:
+       0x1044d8000 -        0x10456ffff node.napi.glibc.node (*) <7675bdb7-f853-3e5a-a13f-ff0f20450ec2> /Users/USER/*/node.napi.glibc.node
+       0x100dac000 -        0x103767fff bun (*) <1a365870-053f-3509-b867-d9b9cd4c44c6> /opt/homebrew/*/bun
+       0x189613000 -        0x1896a7347 dyld (*) <324e4ad9-e01f-3183-b09f-3e20b326643a> /usr/lib/dyld
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+       0x189958000 -        0x189992fff libsystem_kernel.dylib (*) <ca94fc21-bc40-3b43-b65d-b87ece9e1d48> /usr/lib/system/libsystem_kernel.dylib
+       0x189993000 -        0x18999fff3 libsystem_pthread.dylib (*) <a7d94c96-7b1f-3229-9bea-048d037c3292> /usr/lib/system/libsystem_pthread.dylib
+       0x1899a0000 -        0x1899c5ff3 libdyld.dylib (*) <33108ef5-2dc1-3e6d-b3be-c55520e1594f> /usr/lib/system/libdyld.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=942.6M resident=0K(0%) swapped_out_or_unallocated=942.6M(100%)
+Writable regions: Total=53.7G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=53.7G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+IOAccelerator                     64.0M        7 
+JS JIT generated code            512.0M        3 
+JS VM Gigacage                    32.2G        3 
+JS VM Gigacage (reserved)         47.8G        4         reserved VM address space (unallocated)
+Kernel Alloc Once                   32K        1 
+MALLOC                           907.2M       16 
+MALLOC guard page                   96K        6 
+STACK GUARD                        192K       12 
+Stack                             30.8M       12 
+VM_ALLOCATE                      128.0M        1 
+VM_ALLOCATE (reserved)             3.9G        1         reserved VM address space (unallocated)
+WebKit Malloc                    192.1M        4 
+WebKit Malloc (reserved)          64.0M        1         reserved VM address space (unallocated)
+__AUTH                              46K       12 
+__AUTH_CONST                       149K       41 
+__DATA                            11.3M       42 
+__DATA_CONST                      1209K       44 
+__DATA_DIRTY                        87K       23 
+__LINKEDIT                       892.1M        3 
+__OBJC_RO                         71.1M        1 
+__OBJC_RW                         2168K        1 
+__TEXT                            50.5M       46 
+dyld private memory                272K        2 
+shared memory                       32K        2 
+===========                     =======  ======= 
+TOTAL                             86.7G      288 
+TOTAL, minus reserved VM space    35.0G      288 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"bun","timestamp":"2024-01-31 07:38:16.00 -0600","app_version":"","slice_uuid":"1a365870-053f-3509-b867-d9b9cd4c44c6","build_version":"","platform":1,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"macOS 14.2.1 (23C71)","roots_installed":0,"incident_id":"8F5234CD-0993-46E4-AC46-DB0E2158E938","name":"bun"}
+{
+  "uptime" : 140000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookPro18,2",
+  "coalitionID" : 681,
+  "osVersion" : {
+    "train" : "macOS 14.2.1",
+    "build" : "23C71",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2024-01-31 07:38:16.6162 -0600",
+  "codeSigningMonitor" : 1,
+  "incident" : "8F5234CD-0993-46E4-AC46-DB0E2158E938",
+  "pid" : 28564,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2024-01-31 07:38:16.5899 -0600",
+  "procStartAbsTime" : 3549583330131,
+  "procExitAbsTime" : 3549583953494,
+  "procName" : "bun",
+  "procPath" : "\/opt\/homebrew\/*\/bun",
+  "parentProc" : "zsh",
+  "parentPid" : 56411,
+  "coalitionName" : "dev.warp.Warp-Stable",
+  "crashReporterKey" : "8B1EB1E5-D4F3-8952-AE4E-D604E6F88653",
+  "responsiblePid" : 55994,
+  "responsibleProc" : "stable",
+  "codeSigningID" : "bun",
+  "codeSigningTeamID" : "7FRXF46ZSN",
+  "codeSigningFlags" : 570491393,
+  "codeSigningValidationCategory" : 6,
+  "codeSigningTrustLevel" : 4294967295,
+  "instructionByteStream" : {"beforePC":"fyMD1f17v6n9AwCRSSz+l78DAJH9e8Go\/w9f1sADX9YQQYDSARAA1A==","atPC":"AwEAVH8jA9X9e7+p\/QMAkT4s\/pe\/AwCR\/XvBqP8PX9bAA1\/WEESA0g=="},
+  "wakeTime" : 5778,
+  "sleepWakeUUID" : "0BFF3872-5BFF-467F-9DDE-95A081181082",
+  "sip" : "enabled",
+  "exception" : {"codes":"0x0000000000000000, 0x0000000000000000","rawCodes":[0,0],"type":"EXC_CRASH","signal":"SIGKILL"},
+  "termination" : {"code":9,"flags":518,"namespace":"DYLD","reasons":["missing symbol called"]},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":9403653,"threadState":{"x":[{"value":0},{"value":0},{"value":9},{"value":6157124448},{"value":20},{"value":6157123424},{"value":512},{"value":0},{"value":32},{"value":8054607744,"symbolLocation":0,"symbol":"_current_pid"},{"value":10},{"value":0},{"value":50},{"value":2043},{"value":2147745787},{"value":0},{"value":520},{"value":6599828348,"symbolLocation":416,"symbol":"__simple_bprintf"},{"value":0},{"value":0},{"value":6157123424},{"value":20},{"value":6157124448},{"value":9},{"value":6},{"value":2367656000},{"value":18446181123756130306},{"value":4534845576},{"value":4534328448}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6600354608},"cpsr":{"value":4096},"fp":{"value":6157123376},"sp":{"value":6157123312},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6600306048,"matchesCrashFrame":1},"far":{"value":0}},"queue":"com.apple.main-thread","frames":[{"imageOffset":490880,"symbol":"__terminate_with_payload","symbolLocation":8,"imageIndex":2},{"imageOffset":539440,"symbol":"abort_with_payload_wrapper_internal","symbolLocation":136,"imageIndex":2},{"imageOffset":539460,"symbol":"abort_with_payload","symbolLocation":16,"imageIndex":2},{"imageOffset":42372,"symbol":"dyld4::halt(char const*, dyld4::StructuredError const*)","symbolLocation":304,"imageIndex":2},{"imageOffset":273312,"symbol":"dyld4::APIs::_dyld_missing_symbol_abort()","symbolLocation":28,"imageIndex":2},{"imageOffset":61096,"imageIndex":0},{"imageOffset":51864,"imageIndex":0},{"imageOffset":57044,"symbol":"napi_register_module_v1","symbolLocation":48,"imageIndex":0},{"imageOffset":13220868,"imageIndex":1},{"imageOffset":5234540604,"imageIndex":3},{"imageOffset":36769528,"imageIndex":1},{"imageOffset":5234606428,"imageIndex":3},{"imageOffset":36769528,"imageIndex":1},{"imageOffset":36769528,"imageIndex":1},{"imageOffset":36617652,"imageIndex":1},{"imageOffset":25859376,"imageIndex":1},{"imageOffset":13316592,"imageIndex":1},{"imageOffset":13326308,"imageIndex":1},{"imageOffset":5234540604,"imageIndex":3},{"imageOffset":36769528,"imageIndex":1},{"imageOffset":5234606428,"imageIndex":3},{"imageOffset":36769528,"imageIndex":1},{"imageOffset":36617652,"imageIndex":1},{"imageOffset":25859376,"imageIndex":1},{"imageOffset":13316592,"imageIndex":1},{"imageOffset":13342292,"imageIndex":1},{"imageOffset":29952940,"imageIndex":1},{"imageOffset":5234540604,"imageIndex":3},{"imageOffset":36769412,"imageIndex":1},{"imageOffset":36769412,"imageIndex":1},{"imageOffset":36769412,"imageIndex":1},{"imageOffset":36774368,"imageIndex":1},{"imageOffset":36617652,"imageIndex":1},{"imageOffset":25859376,"imageIndex":1},{"imageOffset":29946536,"imageIndex":1},{"imageOffset":31819084,"imageIndex":1},{"imageOffset":6046464,"imageIndex":1},{"imageOffset":2025940,"imageIndex":1},{"imageOffset":21328,"imageIndex":1}]},{"id":9403655,"name":"JavaScriptCore libpas scavenger","threadState":{"x":[{"value":260},{"value":0},{"value":0},{"value":0},{"value":0},{"value":160},{"value":0},{"value":100000080},{"value":6158134952},{"value":0},{"value":4371032856},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4371032832},{"value":4371032896},{"value":6158135520},{"value":100000080},{"value":0},{"value":0},{"value":1},{"value":256},{"value":4652007308841189376},{"value":4365590528}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6158135072},"sp":{"value":6158134928},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":35933472,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403657,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":2304},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999998694},{"value":6158707976},{"value":0},{"value":4514103560},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514103536},{"value":4514103600},{"value":6158708960},{"value":999998694},{"value":9},{"value":2304},{"value":2305},{"value":2560},{"value":1118070880},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6158708096},"sp":{"value":6158707952},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403658,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":1792},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999998826},{"value":6159281416},{"value":0},{"value":4514382088},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514382064},{"value":4514382128},{"value":6159282400},{"value":999998826},{"value":9},{"value":1792},{"value":1793},{"value":2048},{"value":94799112},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6159281536},"sp":{"value":6159281392},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403659,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":2560},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999998442},{"value":6159854856},{"value":0},{"value":4513972488},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4513972464},{"value":4513972528},{"value":6159855840},{"value":999998442},{"value":9},{"value":2560},{"value":2561},{"value":2816},{"value":525515878},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6159854976},"sp":{"value":6159854832},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403660,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":2304},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999998581},{"value":6160428296},{"value":0},{"value":4514398472},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514398448},{"value":4514398512},{"value":6160429280},{"value":999998581},{"value":9},{"value":2304},{"value":2305},{"value":2560},{"value":857757303},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6160428416},"sp":{"value":6160428272},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403661,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":2560},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999999673},{"value":6161001736},{"value":0},{"value":4514054408},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514054384},{"value":4514054448},{"value":6161002720},{"value":999999673},{"value":9},{"value":2560},{"value":2561},{"value":2816},{"value":633710504},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6161001856},"sp":{"value":6161001712},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403662,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":1280},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999999733},{"value":6161575176},{"value":0},{"value":4514136328},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514136304},{"value":4514136368},{"value":6161576160},{"value":999999733},{"value":9},{"value":1280},{"value":1281},{"value":1536},{"value":3961099513},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6161575296},"sp":{"value":6161575152},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403663,"name":"Heap Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":1792},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999999773},{"value":6162148616},{"value":0},{"value":4514021640},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4514021616},{"value":4514021680},{"value":6162149600},{"value":999999773},{"value":9},{"value":1792},{"value":1793},{"value":2048},{"value":1531133549},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6162148736},"sp":{"value":6162148592},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403664,"name":"Bun Pool 0","threadState":{"x":[{"value":18446744073709551612},{"value":0},{"value":1},{"value":0},{"value":4313093148},{"value":6166374816},{"value":6166374752},{"value":0},{"value":1},{"value":1},{"value":32770},{"value":4365050712},{"value":0},{"value":0},{"value":0},{"value":2},{"value":515},{"value":4831870976},{"value":0},{"value":4365050716},{"value":1},{"value":1},{"value":4365050716},{"value":6603548192,"symbolLocation":0,"symbol":"tlv_get_addr"},{"value":3},{"value":4354020248},{"value":1},{"value":3758080000},{"value":6166390520}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4313095224},"cpsr":{"value":1073745920},"fp":{"value":6166392800},"sp":{"value":6166390224},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603257388},"far":{"value":0}},"frames":[{"imageOffset":13868,"symbol":"__ulock_wait","symbolLocation":8,"imageIndex":4},{"imageOffset":3791928,"imageIndex":1},{"imageOffset":7841976,"imageIndex":1},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403665,"name":"Bun Pool 1","threadState":{"x":[{"value":18446744073709551612},{"value":0},{"value":1},{"value":0},{"value":6170634048},{"value":10},{"value":0},{"value":0},{"value":0},{"value":0},{"value":32769},{"value":4365050712},{"value":0},{"value":0},{"value":0},{"value":0},{"value":515},{"value":4697653248},{"value":0},{"value":4365050716},{"value":1},{"value":1},{"value":4365050716},{"value":6603548192,"symbolLocation":0,"symbol":"tlv_get_addr"},{"value":3},{"value":4354020248},{"value":1},{"value":3758080000},{"value":6170633976}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4313095224},"cpsr":{"value":1073745920},"fp":{"value":6170636256},"sp":{"value":6170633680},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603257388},"far":{"value":0}},"frames":[{"imageOffset":13868,"symbol":"__ulock_wait","symbolLocation":8,"imageIndex":4},{"imageOffset":3791928,"imageIndex":1},{"imageOffset":7841976,"imageIndex":1},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":9403669,"name":"JIT Worklist Helper Thread","threadState":{"x":[{"value":260},{"value":0},{"value":256},{"value":0},{"value":0},{"value":160},{"value":9},{"value":999999801},{"value":6171208968},{"value":0},{"value":4515217832},{"value":2},{"value":0},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8206070520},{"value":0},{"value":4515217808},{"value":4515217872},{"value":6171209952},{"value":999999801},{"value":9},{"value":256},{"value":257},{"value":512},{"value":2322394435},{"value":18442240474082181120}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6603515388},"cpsr":{"value":1610616832},"fp":{"value":6171209088},"sp":{"value":6171208944},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6603264108},"far":{"value":0}},"frames":[{"imageOffset":20588,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":4},{"imageOffset":30204,"symbol":"_pthread_cond_wait","symbolLocation":1228,"imageIndex":5},{"imageOffset":16186864,"imageIndex":1},{"imageOffset":16112900,"imageIndex":1},{"imageOffset":16447388,"imageIndex":1},{"imageOffset":28724,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":5},{"imageOffset":7740,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4367155200,
+    "size" : 622592,
+    "uuid" : "7675bdb7-f853-3e5a-a13f-ff0f20450ec2",
+    "path" : "\/Users\/USER\/*\/node.napi.glibc.node",
+    "name" : "node.napi.glibc.node"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4309303296,
+    "size" : 43761664,
+    "uuid" : "1a365870-053f-3509-b867-d9b9cd4c44c6",
+    "path" : "\/opt\/homebrew\/*\/bun",
+    "name" : "bun"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6599815168,
+    "size" : 607048,
+    "uuid" : "324e4ad9-e01f-3183-b09f-3e20b326643a",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6603243520,
+    "size" : 241664,
+    "uuid" : "ca94fc21-bc40-3b43-b65d-b87ece9e1d48",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6603485184,
+    "size" : 53236,
+    "uuid" : "a7d94c96-7b1f-3229-9bea-048d037c3292",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6603538432,
+    "size" : 155636,
+    "uuid" : "33108ef5-2dc1-3e6d-b3be-c55520e1594f",
+    "path" : "\/usr\/lib\/system\/libdyld.dylib",
+    "name" : "libdyld.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 6599065600,
+  "size" : 4061216768,
+  "uuid" : "f9ddd844-7f3f-34bd-be29-f0c72d5e5449"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=942.6M resident=0K(0%) swapped_out_or_unallocated=942.6M(100%)\nWritable regions: Total=53.7G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=53.7G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nIOAccelerator                     64.0M        7 \nJS JIT generated code            512.0M        3 \nJS VM Gigacage                    32.2G        3 \nJS VM Gigacage (reserved)         47.8G        4         reserved VM address space (unallocated)\nKernel Alloc Once                   32K        1 \nMALLOC                           907.2M       16 \nMALLOC guard page                   96K        6 \nSTACK GUARD                        192K       12 \nStack                             30.8M       12 \nVM_ALLOCATE                      128.0M        1 \nVM_ALLOCATE (reserved)             3.9G        1         reserved VM address space (unallocated)\nWebKit Malloc                    192.1M        4 \nWebKit Malloc (reserved)          64.0M        1         reserved VM address space (unallocated)\n__AUTH                              46K       12 \n__AUTH_CONST                       149K       41 \n__DATA                            11.3M       42 \n__DATA_CONST                      1209K       44 \n__DATA_DIRTY                        87K       23 \n__LINKEDIT                       892.1M        3 \n__OBJC_RO                         71.1M        1 \n__OBJC_RW                         2168K        1 \n__TEXT                            50.5M       46 \ndyld private memory                272K        2 \nshared memory                       32K        2 \n===========                     =======  ======= \nTOTAL                             86.7G      288 \nTOTAL, minus reserved VM space    35.0G      288 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "a27de105e16cce2abad9d497862569b426430249",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "6410af69ed1e1e7ab93ed169",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000010
+    },
+    {
+      "rolloutId" : "64628732bf2f5257dedc8988",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000001
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "52e9806b-48cf-4718-ba06-6aaa79468566",
+      "experimentId" : "6553f184553f07431fda611f",
+      "deploymentId" : 400000009
+    }
+  ]
+}
+}
+
